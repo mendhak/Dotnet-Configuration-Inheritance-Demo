@@ -1,9 +1,0 @@
-
-version: '3.4'
-
-services:
-  dotnettest1:
-    image: dotnettest1
-    build:
-      context: .
-      dockerfile: ./Dockerfile

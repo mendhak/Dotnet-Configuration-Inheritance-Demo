@@ -17,3 +17,14 @@ $ ENVIRONMENT_NAME=production SUBJECT__NAME=Dennis dotnet run
 Hello, Dennis
 ```
 
+With Docker
+
+```
+$ docker build -t dotnetconfigdemo:latest .
+
+$ docker run -e ENVIRONMENT_NAME=production --rm dotnetconfigdemo:latest 
+Hello, From Production!
+
+$ docker run -e ENVIRONMENT_NAME=production -e SUBJECT__NAME=Harry --rm dotnetconfigdemo:latest
+Hello, Harry
+```
