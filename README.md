@@ -1,3 +1,4 @@
+Sample app to demonstrate dotnet's hierarchical configuration feature, and double underscore notation to override specific configuration values. 
 
 With dotnet
 
